@@ -20,12 +20,12 @@ some extra features that makes OTalk nicer to use, like message archiving.
 
 3. Install the included modules
 
-        cp -r mod_carbons /usr/lib/prosody/modules
-        cp -r mod_mam /usr/lib/prosody/modules
-        cp -r mod_smacks2 /usr/lib/prosody/modules
-        cp -r mod_smacks3 /usr/lib/prosody/modules
-        cp -r mod_websocket /usr/lib/prosody/modules
+        sudo cp -r mod_carbons /usr/lib/prosody/modules
+        sudo cp -r mod_mam /usr/lib/prosody/modules
+        sudo cp -r mod_smacks2 /usr/lib/prosody/modules
+        sudo cp -r mod_smacks3 /usr/lib/prosody/modules
+        sudo cp -r mod_websocket /usr/lib/prosody/modules
 
 4. Configure Prosody
 
-        cp prosody.cfg.lua /etc/prosody/
+        sudo cp prosody.cfg.lua /etc/prosody/
