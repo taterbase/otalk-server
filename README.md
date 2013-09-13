@@ -47,7 +47,7 @@ some extra features that makes OTalk nicer to use, like message archiving.
 
         npm install -g andyet-prosody-auth
 
-4. Create `/etc/prosody/andyet.json`
+4. Create `/etc/prosody/andyet.json`. 
 
         {
             "bucker": {
@@ -65,3 +65,5 @@ some extra features that makes OTalk nicer to use, like message archiving.
                 "shippy": "https://api.andbang.com"
             }
         }
+
+    **NOTE**: the `"console": false` configuration MUST be included for bucker so that log output does not get sent to Prosody instead of the success/failure tokens.
