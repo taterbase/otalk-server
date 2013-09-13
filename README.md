@@ -30,6 +30,8 @@ some extra features that makes OTalk nicer to use, like message archiving.
 
         sudo cp prosody.cfg.lua /etc/prosody/
 
+5. Allow access to port 5281
+
 
 ## To use &yet authentication
 
