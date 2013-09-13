@@ -30,7 +30,7 @@ some extra features that makes OTalk nicer to use, like message archiving.
 
         sudo cp prosody.cfg.lua /etc/prosody/
 
-5. Allow access to port 5281
+5. Allow access to port 5281. Proxying to hide the port would be best (eg, use `wss://HOST/xmpp-websocket`).
 
 
 ## To use &yet authentication
