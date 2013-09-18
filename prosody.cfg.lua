@@ -50,6 +50,8 @@ storage = {archive2 = "sql2"}
 
 sql = { driver = "SQLite3", database = "prosody.sqlite" }
 
+default_archive_policy = "roster"
+
 log = {
     debug = "/var/log/prosody/prosody.log";
     error = "/var/log/prosody/prosody.err";
