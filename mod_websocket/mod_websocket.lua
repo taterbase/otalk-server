@@ -25,6 +25,8 @@ local t_concat = table.concat;
 local s_byte = string.byte;
 local s_char= string.char;
 
+local consider_websocket_secure = module:get_option("consider_websocket_secure");
+
 local cross_domain = module:get_option("cross_domain_websocket");
 if cross_domain then
 	if cross_domain == true then
@@ -239,6 +241,10 @@ function handle_request(event, path)
 
 	conn:setlistener(c2s_listener);
 	c2s_listener.onconnect(conn);
+
+    if consider_websockets_secure then
+        sessions[conn].secure = true;
+    end
 
 	local frameBuffer = "";
 	add_filter(sessions[conn], "bytes/in", function(data)
